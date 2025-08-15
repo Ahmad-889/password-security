@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #4f46e5; /* Indigo-600 */
+  --primary-hover: #4338ca; /* Indigo-700 */
+  --success-color: #22c55e; /* Green-500 */
+  --danger-color: #ef4444; /* Red-500 */
+  --bg-light: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.25);
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #e0e7ff, #f9fafb);
+  padding: 20px;
+}

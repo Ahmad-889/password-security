@@ -1,59 +1,105 @@
-# PasswordSecurity
+# 🔐 Angular Password Security Tool
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+A modern **Password Security Tool** built with **Angular 19** using **standalone components** and a **service-driven architecture**.  
+It includes a **password generator**, **entropy & strength meter**, **pwned password checker** (via Have I Been Pwned API), and an **educational password guide** — all inside a clean, responsive, and modern UI.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🌐 Live Demo
+
+👉 [Click here to try the app](https://ahmad-889.github.io/password-security/)
+
+---
+
+## 🎯 What I Built
+
+This project is designed with **modular standalone components** for each feature, and a set of **services** to handle password generation, entropy calculation, and security checks.  
+Here’s the breakdown:
+
+* ✅ `PasswordGeneratorComponent`: Creates secure passwords based on user preferences  
+* ✅ `EntropyService`: Calculates password entropy & strength  
+* ✅ `PwnedPasswordCheckerComponent`: Checks if a password has been leaked using the Have I Been Pwned API (k-anonymity)  
+* ✅ `PasswordExplanationComponent`: Educates users on best practices for password creation  
+* ✅ Fully responsive, accessible, and mobile-friendly UI
+
+---
+
+## 💡 Key Features
+
+* 🔑 **Customizable password generator** (length, uppercase, numbers, symbols)  
+* 📊 **Entropy calculation** with real-time strength bar  
+* 🛡 **Breach detection** via Have I Been Pwned API (SHA-1 k-anonymity)  
+* 📖 **Password best practices** with tips and guidelines  
+* 📋 **Copy to clipboard** functionality  
+* 📱 Fully responsive design with a clean and modern aesthetic  
+
+---
+
+## 🧱 Technologies Used
+
+* Angular 19 (Standalone Components)
+* TypeScript
+* SCSS (Modern UI styling)
+* REST API integration (Have I Been Pwned)
+* Clipboard API
+
+---
+
+## 📸 Screenshot
+
+![Password Security Tool](public/Screenshot.png)
+
+---
+
+## 📁 Project Structure
+
+
+```
+src/
+└── app/
+├── components/
+│ ├── header/
+│ │ ├── header.component.ts # App header
+│ │ ├── header.component.html
+│ │ └── header.component.scss
+│ ├── password-generator/
+│ │ ├── password-generator.component.ts # Generates passwords
+│ │ ├── password-generator.component.html
+│ │ └── password-generator.component.scss
+│ ├── password-explanation/
+│ │ ├── password-explanation.component.ts # Displays tips & guidelines
+│ │ ├── password-explanation.component.html
+│ │ └── password-explanation.component.scss
+│ └── pwned-password-checker/
+│ ├── pwned-password-checker.component.ts # Checks breached passwords
+│ ├── pwned-password-checker.component.html
+│ └── pwned-password-checker.component.scss
+├── services/
+│ ├── entropy.service.ts # Entropy calculation logic
+│ ├── password-generator.service.ts # Password creation logic
+│ └── pwned-password.service.ts # Have I Been Pwned API integration
+└── app.component.ts # Root component
+```
+
+## 🚀 Running the Project
+
+Install Angular CLI if you haven't:
 
 ```bash
+npm install -g @angular/cli
+```
+
+Install dependencies and serve:
+
+```bash
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Visit `http://localhost:4200` to see the custom directives in action.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🔗 Author
+Made with ❤️ by
+Muhammad Ahmad
