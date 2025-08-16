@@ -11,6 +11,8 @@ It includes a **password generator**, **entropy & strength meter**, **pwned pass
 
 ---
 
+
+
 ## 🎯 What I Built
 
 This project is designed with **modular standalone components** for each feature, and a set of **services** to handle password generation, entropy calculation, and security checks.  
