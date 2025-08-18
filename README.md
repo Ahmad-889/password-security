@@ -5,6 +5,8 @@ It includes a **password generator**, **entropy & strength meter**, **pwned pass
 
 ---
 
+
+
 ## 🌐 Live Demo
 
 👉 [Click here to try the app](https://ahmad-889.github.io/password-security/)
